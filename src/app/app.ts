@@ -1,9 +1,16 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Navbar } from "./components/navbar/navbar";
+import { Carousel } from "./components/carousel/carousel";
+import { body } from "./components/body/body";
+import { Footer } from "./components/footer/footer";
+import { Categories } from "./components/categories/categories";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Navbar,
+    //Categories,
+     //Carousel,
+      body, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
